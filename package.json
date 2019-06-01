@@ -15,18 +15,18 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:insertNewLine",
-		"onCommand:openNewLine"
+		"onCommand:newLine.insert",
+		"onCommand:newLine.open"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "insertNewLine",
+				"command": "newLine.insert",
 				"title": "Insert New Line"
 			},
 			{
-				"command": "openNewLine",
+				"command": "newLine.open",
 				"title": "Open New Line"
 			}
 		]

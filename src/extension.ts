@@ -4,12 +4,12 @@ export function activate(context: ExtensionContext) {
 
 	let disposable;
 
-	disposable = commands.registerTextEditorCommand('insertNewLine', () => {
+	disposable = commands.registerTextEditorCommand('newLine.insert', () => {
 		commands.executeCommand('type', { text: '\n' });
 	});
 	context.subscriptions.push(disposable);
 
-	disposable = commands.registerTextEditorCommand('openNewLine', () => {
+	disposable = commands.registerTextEditorCommand('newLine.open', () => {
 		commands.executeCommand('insertLineBelow');
 	});
 	context.subscriptions.push(disposable);
