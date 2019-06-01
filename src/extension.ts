@@ -10,7 +10,7 @@ export function activate(context: ExtensionContext) {
 	context.subscriptions.push(disposable);
 
 	disposable = commands.registerTextEditorCommand('newLine.open', () => {
-		commands.executeCommand('insertLineBelow');
+		commands.executeCommand('editor.action.insertLineAfter');
 	});
 	context.subscriptions.push(disposable);
 }
